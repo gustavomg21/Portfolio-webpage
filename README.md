@@ -1,2 +1,2 @@
 # Portfolio-webpage
-AS AN employer I WANT to view a potential employee's deployed portfolio of work samples SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+As a developer I want potential employers to easily access and review my portfolio and personal work to show that I'm a strong candidate for positions
