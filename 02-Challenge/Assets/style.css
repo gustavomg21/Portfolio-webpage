@@ -1,0 +1,224 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --first: slategray;
+    --second: rgb(98, 105, 110);
+    --third:rgb(192, 201, 209);
+    --fourth:rgb(46, 50, 53);
+    --fifth:rgb(250, 250, 250);
+    --sixth: rgb(106, 117, 128);
+    --block:rgb(229,229,229);
+  }
+
+.letras{
+    color: var(--first);
+}
+body{
+    background-color: var(--fifth);
+    border-top: groove;
+    border-color: var(--third);
+}
+.header{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--second);
+}
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+}
+.header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--first);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+.header ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: var(--sixth);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.header ul li:hover::after{
+    width: 100%;
+
+}
+.content {
+    width: 100%;
+    display: inline-block;
+}
+.about-me{
+    text-align: center;
+    padding: 10px;
+    font-family: "Lexend Deca","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: var(--block);
+    color: var(--second);
+    border: outset;
+    border-radius: 10px;
+}
+.imagen{
+    display: flex;
+    max-width: 150px;
+    border-radius: 100px;
+    margin-left: 40%;
+    margin-right:40% ;
+}
+
+
+
+
+
+.work1 {
+    margin: 1%;
+    border: #000000;
+    border-radius: 10px;
+    border: outset;
+    padding: 1%;
+    padding-top: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/images/opm.jpg");
+    color: white;
+}
+.work2 {
+    margin: 1%;
+    border: #000000;
+    border-radius: 10px;
+    border: outset;
+    padding: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/images/2020.10.21-11.47-boundingintocomics-5f90c899c8f5e.png");
+    color: white;
+}
+.work3 {
+    margin: 1%;
+    border: #000000;
+    border-radius: 10px;
+    border: outset;
+    padding: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/images/hxh.jpg");
+    color: white;
+}
+
+.work4 {
+    margin: 1%;
+    border: #000000;
+    border-radius: 10px;
+    border: outset;
+    padding: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/images/aot.jpg");
+    color: white;
+}
+
+.work5 {
+    margin: 1%;
+    border: #000000;
+    border-radius: 10px;
+    border: outset;
+    padding: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Assets/images/baki.jpg");
+    color: white;
+}
+
+
+.work1:hover {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../Assets/images/opm.jpg");
+    color: rgb(255, 0, 0);
+}
+.work2:hover {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../Assets/images/2020.10.21-11.47-boundingintocomics-5f90c899c8f5e.png");
+    color: red;
+}
+
+.work3:hover {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../Assets/images/hxh.jpg");
+    color: red;
+}
+.work4:hover {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../Assets/images/aot.jpg");
+    color: red;
+}
+.work5:hover {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../Assets/images/baki.jpg");
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+ul li a:hover {
+    color: #007bff;
+}
+
+.footer {
+    text-align: center;
+
+}
